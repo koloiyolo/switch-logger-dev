@@ -1,0 +1,29 @@
+version: '1.2'
+
+services:
+
+  site:
+    build:
+      context: ./src
+    ports:
+      - "8000:80"
+
+  login:
+    build:
+      context: ./apis/api
+#    ports: 
+#     - "8001:80"
+
+  devices:
+    build:
+      context: ./apis/devices
+#    ports: 
+#      - "8002:80"
+
+  api:
+    build:
+      context: ./apis/api
+#   ports: 
+#      - "8003:80"
+  
+

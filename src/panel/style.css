@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+section {
+    font-size: larger;
+    height: 100vh;
+    font-family: Roboto;
+    color: white;
+}
+
+.navBar {
+    user-select: none;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    justify-content: center;
+    display: flex;
+    padding: 24px;
+    gap: 32px;
+}
+
+.button {
+    background-color: rgb(32, 32, 32);
+    padding: 16px;
+    border-radius: 16px;
+    border: solid 2px darkgray;
+    cursor: pointer;
+}
+
+.contents {
+    display: flex;
+}
+
+.panel {
+    min-width: 30vh;
+    height: 30vh;
+    margin-left: 32px;
+    padding: 16px;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.content {
+    margin-left: 32px;
+    margin-right: 32px;
+
+    padding: 32px;
+    justify-content: left;
+    height: 70vh;
+    flex: 1;
+    overflow: auto;
+}
+
+.logTiles {
+    height: 70vh;
+    flex: 1;
+    overflow: auto;
+}
+
+.logTile {
+    background-color: rgb(32, 32, 32);
+    border: solid 1px grey;
+    border-radius: 8px;
+    padding: 16px;
+}
